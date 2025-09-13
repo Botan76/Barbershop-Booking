@@ -11,7 +11,7 @@ import SwiftUI
 struct Barbershop_BookingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }

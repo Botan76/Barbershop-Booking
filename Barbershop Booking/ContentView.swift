@@ -10,7 +10,7 @@ import SwiftUI
     
 struct ContentView: View {
     @State private var selectedDate = Date()
-    @StateObject var bookingManager = BookingManager()
+    @ObservedObject var bookingManager: BookingManager
     @State private var showAddBooking = false
 
     var body: some View {
@@ -55,6 +55,4 @@ struct ContentView: View {
 }
 
 
-#Preview {
-    ContentView()
-}
+
